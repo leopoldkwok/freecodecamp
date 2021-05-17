@@ -5,16 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tribute Page</title>
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="main">
       <h1 id="title">Jimi Hendrix</h1>
       <div id="img-div">
-        <img
-          id="image"
-          src="images/jimi_hendrix_portrait.jpeg"
-          alt="Jimi Hendrix Portrait"
-        />
+        <div class="row">
+          <div class="column">
+            <img
+              id="image"
+              src="images/jimi-hendrix-portrait.jpeg"
+              alt="Jimi Hendrix Portrait"
+            />
+            <img
+              id="image"
+              src="images/jimi_hendrix_london.jpeg"
+              alt="Jimi Hendrix in London"
+            />
+          </div>
+          <div class="column">
+            <img
+              id="image"
+              src="images/jimi-hendrix-1967.png"
+              alt="Jimi Hendrix 1967"
+            />
+            <img
+              id="image"
+              src="images/jimi-hendrix.jpeg"
+              alt="Jimi Hendrix Nice Shirt"
+            />
+          </div>
+        </div>
+
         <p id="img-caption">
           <em>One of the Greatest Guitar Players Ever.</em>
         </p>
