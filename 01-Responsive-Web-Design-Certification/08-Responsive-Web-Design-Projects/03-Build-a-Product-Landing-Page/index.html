@@ -5,40 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #header-img {
-        width: 150px;
-        height: 150px;
-      }
-
-      /* For desktop: */
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-
-      @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="col-"] {
-          width: 100%;
-        }
-      }
-
-      .flex-container {
-        display: flex;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/custom-style.css">
   </head>
   <body>
     <header id="header">
+      <center>
       <img
         id="header-img"
         src="http://assets.stickpng.com/thumbs/5854655728fc2508128fec5d.png"
@@ -48,28 +19,33 @@
         <a class="nav-link" href="#request-coupon">Request Coupon</a>
         <a class="nav-link" href="#buy-on-amazon">Buy on Amazon</a>
       </nav>
+      </center>
     </header>
     <section id="learn-more">
-      <h1>The Shure Microphone of Joe Rogan Experience</h1>
-      <iframe
-        id="video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/ycPr5-27vSI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <center>
+        <h1>The Shure Microphone of Joe Rogan Experience</h1>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ycPr5-27vSI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </center>
     </section>
     <section id="request-coupon">
+      <center>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input id="email" type="email" placeholder="Enter email address" name="email"/>
         <input id="submit" type="submit"></input>
       </form>
+      </center>
     </section>
     <section id="buy-on-amazon">
-      <div class="flex container">
+      <div class="flex-container">
         <div>1</div>
         <div>2</div>
         <div>3</div>
