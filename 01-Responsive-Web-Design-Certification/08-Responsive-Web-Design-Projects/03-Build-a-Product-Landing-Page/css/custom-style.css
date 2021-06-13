@@ -1,6 +1,10 @@
-#header-img {
-  width: 150px;
-  height: 150px;
+body {
+  font-family: sans-serif;
+}
+
+section {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 /* For desktop: */
@@ -53,13 +57,39 @@
   justify-content: center;
 }
 
-body {
-  font-family: sans-serif;
+.flex-container > div {
+  background-color: white;
+  width: 200px;
+  /* margin: 300px; */
+  text-align: center;
+  line-height: 400px;
+  font-size: 14px;
 }
 
 .nav-link {
   padding: 20px;
   margin: 20px;
+}
+
+#header-img {
+  top: -100px;
+  width: 150px;
+}
+
+#buy-on-amazon {
+  background-color: #cc0000;
+}
+
+#header {
+  top: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
 }
 
 .learn-more {

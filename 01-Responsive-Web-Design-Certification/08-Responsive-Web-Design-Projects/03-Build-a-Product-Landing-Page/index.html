@@ -17,7 +17,7 @@
       <nav id="nav-bar">
         <a class="nav-link" href="#learn-more">Learn More</a>
         <a class="nav-link" href="#request-coupon">Request Coupon</a>
-        <a class="nav-link" href="#buy-on-amazon">Buy on Amazon</a>
+        <a class="nav-link" href="#buy-on-amazon">Buy at Online Store</a>
       </nav>
       </center>
     </header>
@@ -38,6 +38,7 @@
     </section>
     <section id="request-coupon">
       <center>
+      <h2>Request a Coupon</h2>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input id="email" type="email" placeholder="Enter email address" name="email"/>
         <input id="submit" type="submit"></input>
@@ -46,11 +47,25 @@
     </section>
     <section id="buy-on-amazon">
       <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div><a href="/amazon-affiliate-link">Buy on Amazon</a></div>
+        <div><a href="/crutchfield-affiliate-link">Buy on Crutchfield</div>
+        <div><a href="/shure-affiliate-link">Buy on Shure</a></div>
       </div>
     </section>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    window.onscroll = function() { myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() { 
+      if(window.pageYOffset > sticky) {
+          header.classList.add("sticky")
+      } else {
+        header.classList.remove("sticky")
+      }
+    }
+  </script>
 </html>
